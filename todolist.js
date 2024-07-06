@@ -14,9 +14,11 @@ function addTodoHTML() {
     const { date } = todoList[i];
 
     const todo = `
-      <div class="bg">${name}</div>
-      <div class="bg">${date}</div>
-      <button class="js-delete">Delete</button>`;
+      <div class="list">
+        <div class="bg">${name}</div>
+        <div class="bg">${date}</div>
+        <button class="js-delete">Delete</button>
+      </div>`;
 
     todoListHTML += todo;
   }
