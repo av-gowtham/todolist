@@ -20,6 +20,7 @@ body {
 
 .container,
 .list {
+  max-width: 100%;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -76,11 +77,6 @@ body {
 }
 
 @media (max-width: 500px) {
-  .container,
-  .list {
-    grid-template-columns: 150px 150px 1fr;
-  }
-
   .input,
   .date-input,
   .bg {
