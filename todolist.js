@@ -15,7 +15,7 @@ function addTodoHTML() {
 
     const todo = `
       <div class="list">
-        <div class="bg">${name}</div>
+        <div class="bg-input bg">${name}</div>
         <div class="bg">${date}</div>
         <button class="js-delete">Delete</button>
       </div>`;

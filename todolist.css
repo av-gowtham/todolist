@@ -20,9 +20,9 @@ body {
 
 .container,
 .list {
-  display: grid;
-  grid-template-columns: 200px 150px 100px;
+  display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .list {
@@ -43,14 +43,20 @@ body {
   overflow-x: hidden;
 }
 
+.input,
+.bg-input {
+  flex: 1;
+}
+
 .add-btn,
 .js-delete {
   background-color: green;
   border: none;
   color: white;
-  font-size: 15px;
+  font-size: 16px;
   padding: 10px;
   border-radius: 50px;
+  width: 100px;
 }
 
 .js-delete {
@@ -70,12 +76,9 @@ body {
 }
 
 @media (max-width: 500px) {
-  .container {
-    grid-template-columns: 150px 50px 1fr;
-  }
-
+  .container,
   .list {
-    grid-template-columns: 150px 100px 1fr;
+    grid-template-columns: 150px 150px 1fr;
   }
 
   .input,
@@ -88,6 +91,14 @@ body {
     font-size: 12px;
   }
 
+  .add-btn {
+    width: auto;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .bg {
     font-size: 12px;
     height: 30px;
@@ -97,6 +108,7 @@ body {
   }
 
   .js-delete {
+    width: auto;
     padding: 5px 10px;
     height: 40px;
     font-size: 12px;
